@@ -159,13 +159,15 @@ import * as React from 'react';
    2.  The New version below  (replaced label prop with 'children)
      const InputWithLabel = ({ id, value, onInputChange, children }) => 
 
-       In the InputWithLabel component, you have access to the label prop
-     information via React's 'children' prop now.
+       In the previous example, instead of using the label prop from 
+    before, we inserted the text "Search:" between the component's element's 
+    tags. In the InputWithLabel component, you have access to this 
+    information via React's children prop now.   
    
        Instead of using the label prop, use the children prop to render 
-      everything that has been rendered in between the <InputWithLabel> 
-      opening and </InputWithLabel> closing tag. In this case "Search:"
-      that we inserted. */
+    everything that has been rendered in between the <InputWithLabel> 
+    opening and </InputWithLabel> closing tag. In this case "Search:"
+    that we inserted. */
 
       const InputWithLabel = ({
         id,
